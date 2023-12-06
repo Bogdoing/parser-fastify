@@ -102,8 +102,10 @@ async function fmtItems(item){
     else return item
 }
 
+function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
+
 async function pars(){
-    //console.time("Время выполнения");
+    console.time("Время выполнения");
     let result = []
     for (let i = 0; i < url_hh.length; i++) {
         console.log('-----------------------------------------')
@@ -111,12 +113,24 @@ async function pars(){
         let job = await getCountJob(url_hh[i], region_hh[2])
         let resum = await getCountResum(url_hh[i], region_hh[2])
 
-        if (resum && resum.resum) {
-            resum.resum = await fmtItems(resum.resum); // resum
-        }
+        //
+        while (job.count == '') {
+            sleep(1000)
+            //console.log(i)
+            job = await getCountJob(url_hh[i], region_hh[2])
+        }    
+        while (resum.resum == '') {
+            sleep(1000)
+            //console.log(i)
+            job = await getCountResum(url_hh[i], region_hh[2])
+        }   
         if (job && job.count) {
             job.count = await fmtItems(job.count);
         }
+        if (resum && resum.resum) {
+            resum.resum = await fmtItems(resum.resum);
+        }
+        //
 
         result.push({
             'lang': job.lang,
@@ -134,7 +148,7 @@ async function pars(){
     }
     console.log('-----------------------------------------')
 
-    //console.timeEnd("Время выполнения");
+    console.timeEnd("Время выполнения");
     return { result }
 }
 
