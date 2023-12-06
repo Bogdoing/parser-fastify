@@ -7,7 +7,8 @@
   "scripts": {
     "start": "fastify start index.js",
     "dev": "nodemon index.js",
-    "pars": "nodemon --inspect ./parser/parserSync.js",
+    "pars": "nodemon testFun.js",
+    "parsAs": "nodemon --inspect ./parser/parserAsync.js",
     "parsGit": "nodemon --inspect ./parser/parsGitHub.js",
     "json": "nodemon --inspect ./toJSON/writeJSON.js"
   },

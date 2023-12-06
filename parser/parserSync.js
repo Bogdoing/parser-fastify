@@ -105,7 +105,6 @@ async function fmtItems(item){
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
 
 async function pars(){
-    console.time("Время выполнения");
     let result = []
     for (let i = 0; i < url_hh.length; i++) {
         console.log('-----------------------------------------')
@@ -146,14 +145,14 @@ async function pars(){
             'result' : Number(resum.resum) / Number(job.count)
         })
     }
-    console.log('-----------------------------------------')
 
-    console.timeEnd("Время выполнения");
+    console.log('-----------------------------------------')
     return { result }
 }
 
-//pars()
-
+// console.time("Время выполнения");
+// pars()
+// console.timeEnd("Время выполнения");
 export default pars
 
 
