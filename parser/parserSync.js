@@ -46,8 +46,9 @@ const getCountJob = async(url, region) => {
         //console.log(linksLength)
         
         return linksLength = {
-            'count' : linksLengthCount[0],
-            'lang' :  linksLengthLang[1].split('»')[0],
+            'count' :  linksLengthCount[0],
+            'lang'  :  linksLengthLang[1].split('»')[0],
+            'region':  region
         }
         
     }

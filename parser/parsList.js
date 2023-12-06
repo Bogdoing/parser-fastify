@@ -1,6 +1,5 @@
 const url_HH = [
     '1C',
-    'Blazor',
     'ruby+or+Ruby+on+Rails',
     
     'Kotlin',

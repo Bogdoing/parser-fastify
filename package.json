@@ -8,7 +8,8 @@
     "start": "fastify start index.js",
     "dev": "nodemon index.js",
     "pars": "nodemon --inspect ./parser/parserSync.js",
-    "parsGit": "nodemon --inspect ./parser/parsGitHub.js"
+    "parsGit": "nodemon --inspect ./parser/parsGitHub.js",
+    "json": "nodemon --inspect ./toJSON/writeJSON.js"
   },
   "dependencies": {
     "@fastify/cors": "^8.4.1",

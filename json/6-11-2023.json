@@ -1,0 +1,112 @@
+{
+  "result": [
+    {
+      "lang": "1C",
+      "vac": "3726",
+      "res": "1752597",
+      "result": 470.3695652173913
+    },
+    {
+      "lang": "ruby or Ruby on Rails",
+      "vac": "36",
+      "res": "4844",
+      "result": 134.55555555555554
+    },
+    {
+      "lang": "Kotlin",
+      "vac": "109",
+      "res": "6969",
+      "result": 63.93577981651376
+    },
+    {
+      "lang": "Swift",
+      "vac": "55",
+      "res": "20195",
+      "result": 367.1818181818182
+    },
+    {
+      "lang": "Dart",
+      "vac": "4",
+      "res": "1518",
+      "result": 379.5
+    },
+    {
+      "lang": "Rust",
+      "vac": "13",
+      "res": "1432",
+      "result": 110.15384615384616
+    },
+    {
+      "lang": "C",
+      "vac": "935",
+      "res": "694143",
+      "result": 742.3989304812834
+    },
+    {
+      "lang": "javascript or js",
+      "vac": "351",
+      "res": "100841",
+      "result": 287.2962962962963
+    },
+    {
+      "lang": "TypeScript or ts",
+      "vac": "68",
+      "res": "26578",
+      "result": 390.8529411764706
+    },
+    {
+      "lang": "php",
+      "vac": "596",
+      "res": "83733",
+      "result": 140.49161073825502
+    },
+    {
+      "lang": "python",
+      "vac": "700",
+      "res": "143986",
+      "result": 205.6942857142857
+    },
+    {
+      "lang": "golang or go developer",
+      "vac": "503",
+      "res": "25929",
+      "result": 51.54870775347913
+    },
+    {
+      "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
+      "vac": "147",
+      "res": "30334",
+      "result": 206.35374149659864
+    },
+    {
+      "lang": ".net OR C#",
+      "vac": "561",
+      "res": "141708",
+      "result": 252.59893048128342
+    },
+    {
+      "lang": "java",
+      "vac": "1110",
+      "res": "68516",
+      "result": 61.726126126126125
+    },
+    {
+      "lang": "Angular",
+      "vac": "117",
+      "res": "6152",
+      "result": 52.58119658119658
+    },
+    {
+      "lang": "React",
+      "vac": "283",
+      "res": "28627",
+      "result": 101.15547703180212
+    },
+    {
+      "lang": "Vue",
+      "vac": "152",
+      "res": "12132",
+      "result": 79.8157894736842
+    }
+  ]
+}
