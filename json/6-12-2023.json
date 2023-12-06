@@ -2,21 +2,21 @@
   "result": [
     {
       "lang": "1C",
-      "vac": "3726",
-      "res": "1752597",
-      "result": 470.3695652173913
+      "vac": "3729",
+      "res": "1752603",
+      "result": 469.99275945293647
     },
     {
       "lang": "ruby or Ruby on Rails",
       "vac": "36",
-      "res": "4844",
-      "result": 134.55555555555554
+      "res": "4843",
+      "result": 134.52777777777777
     },
     {
       "lang": "Kotlin",
       "vac": "109",
-      "res": "6969",
-      "result": 63.93577981651376
+      "res": "6967",
+      "result": 63.91743119266055
     },
     {
       "lang": "Swift",
@@ -27,8 +27,8 @@
     {
       "lang": "Dart",
       "vac": "4",
-      "res": "1518",
-      "result": 379.5
+      "res": "1519",
+      "result": 379.75
     },
     {
       "lang": "Rust",
@@ -39,56 +39,56 @@
     {
       "lang": "C",
       "vac": "935",
-      "res": "694143",
-      "result": 742.3989304812834
+      "res": "694119",
+      "result": 742.3732620320856
     },
     {
       "lang": "javascript or js",
-      "vac": "351",
-      "res": "100841",
-      "result": 287.2962962962963
+      "vac": "352",
+      "res": "100860",
+      "result": 286.53409090909093
     },
     {
       "lang": "TypeScript or ts",
       "vac": "68",
-      "res": "26578",
-      "result": 390.8529411764706
+      "res": "26581",
+      "result": 390.8970588235294
     },
     {
       "lang": "php",
-      "vac": "596",
+      "vac": "597",
       "res": "83733",
-      "result": 140.49161073825502
+      "result": 140.25628140703517
     },
     {
       "lang": "python",
-      "vac": "700",
-      "res": "143986",
-      "result": 205.6942857142857
+      "vac": "701",
+      "res": "143994",
+      "result": 205.41226818830242
     },
     {
       "lang": "golang or go developer",
-      "vac": "503",
-      "res": "25929",
-      "result": 51.54870775347913
+      "vac": "501",
+      "res": "25926",
+      "result": 51.74850299401198
     },
     {
       "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
-      "vac": "147",
-      "res": "30334",
-      "result": 206.35374149659864
+      "vac": "148",
+      "res": "30339",
+      "result": 204.99324324324326
     },
     {
       "lang": ".net OR C#",
       "vac": "561",
-      "res": "141708",
-      "result": 252.59893048128342
+      "res": "141696",
+      "result": 252.57754010695186
     },
     {
       "lang": "java",
       "vac": "1110",
-      "res": "68516",
-      "result": 61.726126126126125
+      "res": "68510",
+      "result": 61.72072072072072
     },
     {
       "lang": "Angular",
@@ -99,14 +99,14 @@
     {
       "lang": "React",
       "vac": "283",
-      "res": "28627",
-      "result": 101.15547703180212
+      "res": "28625",
+      "result": 101.14840989399293
     },
     {
       "lang": "Vue",
       "vac": "152",
-      "res": "12132",
-      "result": 79.8157894736842
+      "res": "12133",
+      "result": 79.82236842105263
     }
   ]
 }

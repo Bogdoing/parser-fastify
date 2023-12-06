@@ -22,12 +22,13 @@ async function save(){
 
 function currData(){
     let date = new Date();
-    date = date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear()
+    let month = date.getMonth() + 1;
+    date = date.getDate() + '-' + month + '-' + date.getFullYear()
     //console.log(date);
     return date;
 }
 
-//datas()
+//currData()
 save()
 
 //export default save

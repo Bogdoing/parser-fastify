@@ -141,6 +141,5 @@ async function pars(){
 //pars()
 
 export default pars
-//module.exports.pars = pars
 
 
