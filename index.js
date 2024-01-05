@@ -4,10 +4,11 @@ import cors from '@fastify/cors'
 import testRout from './routing/testRout.js'
 import parsRout from './routing/parsRout.js'
 import parsAsRout from './routing/parsAsRout.js'
+import jsonData from './routing/jsonDataGet.js'
 
 
 const fastify = Fastify({
-    logger: true
+    //logger: true
 })
 
 await fastify.register(cors, { 
@@ -26,6 +27,7 @@ fastify.get('/about', (request, reply) => {
 fastify.register(testRout, {})
 fastify.register(parsRout, {})
 fastify.register(parsAsRout, {})
+// fastify.register(jsonData, {})
 
 
 fastify.listen({ port: 3000 }, function (err, address) {

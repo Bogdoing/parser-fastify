@@ -34,6 +34,7 @@ const getData = async() => {
 const getCountJob = async(url, region) => {
     try{
         const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?ored_clusters=true&search_field=name&search_field=company_name&hhtmFrom=vacancy_search_list&area=${region}&text=${url}&enable_snippets=false&L_save_area=true`)
+                                        //  https://voronezh.hh.ru/search/vacancy?text=${url}&area=${region}&hhtmFrom=main&hhtmFromLabel=vacancy_search_line
         const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
         var linksLength = await
             dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent
@@ -49,11 +50,32 @@ const getCountJob = async(url, region) => {
             'count' :  linksLengthCount[0],
             'lang'  :  linksLengthLang[1].split('»')[0],
             'region':  region
-        }
-        
+        } 
     }
     catch(e) { console.log('Eror - ' + e) }
-    
+}
+
+const getJobReference = async(url, region) => {
+    try{
+        const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?text=${url}&area=${region}&hhtmFrom=main&hhtmFromLabel=vacancy_search_line`)
+        const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
+        var linksLength = await
+            dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent
+
+        let linksLengthCount = linksLength.split(' ')
+        if (linksLengthCount[0] == 'По') linksLengthCount[0] = '0'
+
+        let linksLengthLang = linksLength.split('«')
+        
+        //console.log(linksLength)
+        
+        return linksLength = {
+            'count' :  linksLengthCount[0],
+            'lang'  :  linksLengthLang[1].split('»')[0],
+            'region':  region
+        } 
+    }
+    catch(e) { console.log('Eror - ' + e) }
 }
 
 const getCountResum = async (url, region) => {
@@ -104,27 +126,37 @@ async function fmtItems(item){
 
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
 
-async function pars(){
-    let result = []
+async function pars(region){
+    let result = [];
+
     for (let i = 0; i < url_hh.length; i++) {
         console.log('-----------------------------------------')
         
-        let job = await getCountJob(url_hh[i], region_hh[2])
-        let resum = await getCountResum(url_hh[i], region_hh[2])
+        let job = await getCountJob(url_hh[i], region)
+        let jobReference = await getJobReference(url_hh[i], region)
+        let resum = await getCountResum(url_hh[i], region)
 
         //
-        while (job.count == '') {
+        while (typeof job === 'undefined') {
             sleep(1000)
-            //console.log(i)
-            job = await getCountJob(url_hh[i], region_hh[2])
+            console.log(i)
+            job = await getCountJob(url_hh[i], region)
         }    
-        while (resum.resum == '') {
+        while (typeof jobReference === 'undefined') {
             sleep(1000)
-            //console.log(i)
-            job = await getCountResum(url_hh[i], region_hh[2])
+            console.log(i)
+            jobReference = await getJobReference(url_hh[i], region)
+        }  
+        while (typeof resum === 'undefined') {
+            sleep(1000)
+            console.log(i)
+            job = await getCountResum(url_hh[i], region)
         }   
         if (job && job.count) {
             job.count = await fmtItems(job.count);
+        }
+        if (jobReference && jobReference.count) {
+            jobReference.count = await fmtItems(jobReference.count);
         }
         if (resum && resum.resum) {
             resum.resum = await fmtItems(resum.resum);
@@ -134,6 +166,7 @@ async function pars(){
         result.push({
             'lang': job.lang,
             'vac': job.count,
+            'vacRef': jobReference.count,
             'res': resum.resum,
             'result' : Number(resum.resum) / Number(job.count)
         })
@@ -141,6 +174,7 @@ async function pars(){
         console.log({
             'lang': job.lang,
             'vac': job.count,
+            'vacRef': jobReference.count,
             'res': resum.resum,
             'result' : Number(resum.resum) / Number(job.count)
         })
@@ -150,9 +184,6 @@ async function pars(){
     return { result }
 }
 
-// console.time("Время выполнения");
-// pars()
-// console.timeEnd("Время выполнения");
 export default pars
 
 

@@ -3,8 +3,11 @@ const url_HH = [
     'ruby+or+Ruby+on+Rails',
     
     'Kotlin',
+    //'Android+developer',
     'Swift',
+    //'IOS+developer',
     'Dart',
+
     
     'Rust',
     'C++',
@@ -47,11 +50,12 @@ const lang_github = [
     'C%2B%2B',
     'JavaScript',
     'TypeScript',
-    // 'Php',
-    // 'Python',
-    // 'Go',
-    // 'C%23',
-    // 'Java',
+    'vue',
+    'Php',
+    'Python',
+    'Go',
+    'C%23',
+    'Java',
 
 ]
 const div_github = 'Box-sc-g0xbh4-0 cgQapc'

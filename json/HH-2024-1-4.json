@@ -1,0 +1,131 @@
+{
+  "result": [
+    "1",
+    {
+      "lang": "1C",
+      "vac": "3046",
+      "vacRef": "28230",
+      "res": "1754404",
+      "result": 575.9697964543664
+    },
+    {
+      "lang": "ruby or Ruby on Rails",
+      "vac": "48",
+      "vacRef": "197",
+      "res": "4849",
+      "result": 101.02083333333333
+    },
+    {
+      "lang": "Kotlin",
+      "vac": "81",
+      "vacRef": "664",
+      "res": "7113",
+      "result": 87.81481481481481
+    },
+    {
+      "lang": "Swift",
+      "vac": "48",
+      "vacRef": "362",
+      "res": "20222",
+      "result": 421.2916666666667
+    },
+    {
+      "lang": "Dart",
+      "vac": "5",
+      "vacRef": "58",
+      "res": "1528",
+      "result": 305.6
+    },
+    {
+      "lang": "Rust",
+      "vac": "15",
+      "vacRef": "79",
+      "res": "1478",
+      "result": 98.53333333333333
+    },
+    {
+      "lang": "C",
+      "vac": "805",
+      "vacRef": "12636",
+      "res": "694627",
+      "result": 862.8906832298137
+    },
+    {
+      "lang": "javascript or js",
+      "vac": "284",
+      "vacRef": "2651",
+      "res": "101623",
+      "result": 357.8274647887324
+    },
+    {
+      "lang": "TypeScript or ts",
+      "vac": "53",
+      "vacRef": "1047",
+      "res": "26995",
+      "result": 509.33962264150944
+    },
+    {
+      "lang": "php",
+      "vac": "443",
+      "vacRef": "1236",
+      "res": "83878",
+      "result": 189.3408577878104
+    },
+    {
+      "lang": "python",
+      "vac": "585",
+      "vacRef": "5512",
+      "res": "145708",
+      "result": 249.07350427350428
+    },
+    {
+      "lang": "golang or go developer",
+      "vac": "438",
+      "vacRef": "1352",
+      "res": "26182",
+      "result": 59.77625570776256
+    },
+    {
+      "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
+      "vac": "120",
+      "vacRef": "1022",
+      "res": "30926",
+      "result": 257.71666666666664
+    },
+    {
+      "lang": ".net OR C#",
+      "vac": "477",
+      "vacRef": "1800",
+      "res": "142141",
+      "result": 297.9895178197065
+    },
+    {
+      "lang": "java",
+      "vac": "974",
+      "vacRef": "2959",
+      "res": "68966",
+      "result": 70.80698151950719
+    },
+    {
+      "lang": "Angular",
+      "vac": "83",
+      "vacRef": "396",
+      "res": "6246",
+      "result": 75.25301204819277
+    },
+    {
+      "lang": "React",
+      "vac": "192",
+      "vacRef": "1190",
+      "res": "29105",
+      "result": 151.58854166666666
+    },
+    {
+      "lang": "Vue",
+      "vac": "131",
+      "vacRef": "658",
+      "res": "12290",
+      "result": 93.81679389312977
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "result": [
+    {
+      "count": "1500000",
+      "lang": "Ruby"
+    },
+    {
+      "count": "164000",
+      "lang": "Kotlin"
+    },
+    {
+      "count": "488000",
+      "lang": "Swift"
+    },
+    {
+      "count": "62000",
+      "lang": "Dart"
+    },
+    {
+      "count": "78100",
+      "lang": "Rust"
+    },
+    {
+      "count": "1500000",
+      "lang": "C%2B%2B"
+    },
+    {
+      "count": "6200000",
+      "lang": "JavaScript"
+    },
+    {
+      "count": "759000",
+      "lang": "TypeScript"
+    },
+    {
+      "count": "149000",
+      "lang": "vue"
+    },
+    {
+      "count": "1900000",
+      "lang": "Php"
+    },
+    {
+      "count": "3600000",
+      "lang": "Python"
+    },
+    {
+      "count": "427000",
+      "lang": "Go"
+    },
+    {
+      "count": "1500000",
+      "lang": "C%23"
+    },
+    {
+      "count": "5200000",
+      "lang": "Java"
+    }
+  ]
+}

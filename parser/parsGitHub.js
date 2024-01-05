@@ -62,11 +62,15 @@ async function pars(){
 
         getRes.count = convertNumberString(getRes.count.split(' ')[0]);
         console.log(getRes)
-        result += getRes
+        
+        result.push({
+            'count': getRes.count,
+            'lang': getRes.lang,
+        })
     }
-    console.dir(result)
+    return { result }
 }
 
-pars()
+//pars()
 
-//export default pars
+export default pars

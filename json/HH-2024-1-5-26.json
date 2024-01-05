@@ -1,0 +1,130 @@
+{
+  "result": [
+    {
+      "lang": "1C",
+      "vac": "185",
+      "vacRef": "1933",
+      "res": "95744",
+      "result": 517.5351351351351
+    },
+    {
+      "lang": "ruby or Ruby on Rails",
+      "vac": "0",
+      "vacRef": "2",
+      "res": "147",
+      "result": null
+    },
+    {
+      "lang": "Kotlin",
+      "vac": "2",
+      "vacRef": "19",
+      "res": "244",
+      "result": 122
+    },
+    {
+      "lang": "Swift",
+      "vac": "0",
+      "vacRef": "8",
+      "res": "239",
+      "result": null
+    },
+    {
+      "lang": "Dart",
+      "vac": "0",
+      "vacRef": "1",
+      "res": "74",
+      "result": null
+    },
+    {
+      "lang": "Rust",
+      "vac": "0",
+      "vacRef": "0",
+      "res": "33",
+      "result": null
+    },
+    {
+      "lang": "C",
+      "vac": "45",
+      "vacRef": "631",
+      "res": "24214",
+      "result": 538.0888888888888
+    },
+    {
+      "lang": "javascript or js",
+      "vac": "7",
+      "vacRef": "58",
+      "res": "3764",
+      "result": 537.7142857142857
+    },
+    {
+      "lang": "TypeScript or ts",
+      "vac": "2",
+      "vacRef": "21",
+      "res": "2068",
+      "result": 1034
+    },
+    {
+      "lang": "php",
+      "vac": "18",
+      "vacRef": "36",
+      "res": "2890",
+      "result": 160.55555555555554
+    },
+    {
+      "lang": "python",
+      "vac": "16",
+      "vacRef": "72",
+      "res": "3794",
+      "result": 237.125
+    },
+    {
+      "lang": "golang or go developer",
+      "vac": "2",
+      "vacRef": "10",
+      "res": "354",
+      "result": 177
+    },
+    {
+      "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
+      "vac": "4",
+      "vacRef": "19",
+      "res": "1059",
+      "result": 264.75
+    },
+    {
+      "lang": ".net OR C#",
+      "vac": "6",
+      "vacRef": "39",
+      "res": "5131",
+      "result": 855.1666666666666
+    },
+    {
+      "lang": "java",
+      "vac": "17",
+      "vacRef": "59",
+      "res": "2807",
+      "result": 165.11764705882354
+    },
+    {
+      "lang": "Angular",
+      "vac": "4",
+      "vacRef": "18",
+      "res": "259",
+      "result": 64.75
+    },
+    {
+      "lang": "React",
+      "vac": "6",
+      "vacRef": "19",
+      "res": "1031",
+      "result": 171.83333333333334
+    },
+    {
+      "lang": "Vue",
+      "vac": "0",
+      "vacRef": "14",
+      "res": "404",
+      "result": null
+    }
+  ]
+}
