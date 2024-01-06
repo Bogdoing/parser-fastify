@@ -4,10 +4,10 @@ import parserAs from './parser/parserAsync.js'
 
 console.time("Время выполнения");
 
-// let result = await parser()
-// console.log(result)
-
-let result = await parserAs()
+let result = await parser()
 console.log(result)
+
+// let result = await parserAs()
+// console.log(result)
 
 console.timeEnd("Время выполнения");

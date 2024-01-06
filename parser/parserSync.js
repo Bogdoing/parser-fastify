@@ -126,6 +126,13 @@ async function fmtItems(item){
 
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
 
+function currData(){
+    let date = new Date();
+    let month = date.getMonth() + 1;
+    date = date.getFullYear() + '-' + month + '-' + date.getDate()
+    return date;
+}
+
 async function pars(region){
     let result = [];
 
@@ -168,7 +175,8 @@ async function pars(region){
             'vac': job.count,
             'vacRef': jobReference.count,
             'res': resum.resum,
-            'result' : Number(resum.resum) / Number(job.count)
+            'region' : region,
+            'data' : currData(),
         })
         
         console.log({
@@ -176,12 +184,13 @@ async function pars(region){
             'vac': job.count,
             'vacRef': jobReference.count,
             'res': resum.resum,
-            'result' : Number(resum.resum) / Number(job.count)
+            'region' : region,
+            'data' : currData(),
         })
     }
 
     console.log('-----------------------------------------')
-    return { result }
+    return result 
 }
 
 export default pars

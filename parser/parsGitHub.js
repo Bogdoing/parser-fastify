@@ -49,6 +49,13 @@ const getLangGitHub = async(url) => {
 
 function sleep(ms){ return new Promise(resolve => setTimeout(resolve, ms)); }
 
+function currData(){
+    let date = new Date();
+    let month = date.getMonth() + 1;
+    date = date.getFullYear() + '-' + month + '-' + date.getDate()
+    return date;
+}
+
 async function pars(){
     let result = []
     for (let i = 0; i < lang_github.length; i++) {
@@ -62,13 +69,14 @@ async function pars(){
 
         getRes.count = convertNumberString(getRes.count.split(' ')[0]);
         console.log(getRes)
-        
+
         result.push({
             'count': getRes.count,
             'lang': getRes.lang,
+            'data': currData()
         })
     }
-    return { result }
+    return result 
 }
 
 //pars()

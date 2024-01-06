@@ -7,24 +7,48 @@ import dataPars from '../parser/parsList.js'
 const region_hh = dataPars.region_hh
 
 
-async function save(){
-    // for (let i = 0; i < region_hh.length; i++) {
-    //     const data = await parser(region_hh[i])
-    //     const jsonData = await JSON.stringify(data, null, 2);
-    //     const dataTime = './json/HH-' + currData() + '-' + region_hh[i] + '.json' 
-    //     fs.writeFile(dataTime, jsonData, 'utf8', err => {
-    //         if (err) { console.error(err); } 
-    //         else { console.log('Данные успешно сохранены в файле ' + dataTime); }
-    //     });
-    // }
+async function saveJSON(){
+    saveGIT()
+    saveHH()
+}
+
+async function saveGIT(){
+    const dataCurr = currData()
+    let all_data = {
+        [dataCurr] : []
+    }
 
     const data = await parserGit()
+    all_data[dataCurr].push(data);
+
     const jsonData = await JSON.stringify(data, null, 2);
     const dataTime = './json/GIT-' + currData() + '.json' 
     fs.writeFile(dataTime, jsonData, 'utf8', err => {
         if (err) { console.error(err); } 
         else { console.log('Данные успешно сохранены в файле ' + dataTime); }
     });
+
+    appendToJsonFile('./json/GIT.json', all_data)
+}
+
+async function saveHH(){
+    const dataCurr = currData()
+    let all_data = {
+        [dataCurr] : []
+    }
+    for (let i = 0; i < region_hh.length; i++) {
+        const data = await parser(region_hh[i])
+        all_data[dataCurr].push(data);
+        const jsonData = await JSON.stringify(data, null, 2);
+        const dataTime = './json/HH-' + currData() + '-' + region_hh[i] + '.json' 
+        fs.writeFile(dataTime, jsonData, 'utf8', err => {
+            if (err) { console.error(err); } 
+            else { console.log('Данные успешно сохранены в файле ' + dataTime); }
+        });
+    }
+
+    appendToJsonFile('./json/HH.json', all_data)
+    console.log(all_data)
 }
 
 function currData(){
@@ -34,6 +58,63 @@ function currData(){
     return date;
 }
 
-save()
+function appendToJsonFile(filename, data) {
+    // Открываем файл существующего JSON-объекта
+    fs.readFile(filename, 'utf8', (err, fileData) => {
+        if (err) {
+            console.error('Ошибка при чтении файла:', err);
+            return;
+        }
+        try {
+        // Преобразуем содержимое файла в объект
+            const json = JSON.parse(fileData);
+            // Дописываем переданные значения в объект
+            Object.assign(json, data);
+            // Преобразуем объект обратно в строку JSON
+            const updatedJson = JSON.stringify(json, null, 2);
+            // Записываем обновленную строку в файл
+            fs.writeFile(filename, updatedJson, 'utf8', (err) => {
+                if (err) { console.error('Ошибка при записи в файл:', err); } 
+                else { console.log('Значения успешно добавлены в файл', filename); }
+            });
+        } catch (err) { console.error('Ошибка при разборе содержимого файла:', err); }
+    });
+}
+
+saveJSON()
 
 //export default save
+
+
+
+
+
+/*
+    const dataCurr = currData()
+    let all_data = {
+        [dataCurr] : []
+    }
+    for (let i = 0; i < region_hh.length; i++) {
+        const data = await parser(region_hh[i])
+        console.log(data)
+        all_data[dataCurr].push(data);
+        const jsonData = await JSON.stringify(data, null, 2);
+        const dataTime = './json/HH-' + currData() + '-' + region_hh[i] + '.json' 
+        fs.writeFile(dataTime, jsonData, 'utf8', err => {
+            if (err) { console.error(err); } 
+            else { console.log('Данные успешно сохранены в файле ' + dataTime); }
+        });
+    }
+
+    // const data = await parserGit()
+    // const jsonData = await JSON.stringify(data, null, 2);
+    // const dataTime = './json/GIT-' + currData() + '.json' 
+    // fs.writeFile(dataTime, jsonData, 'utf8', err => {
+    //     if (err) { console.error(err); } 
+    //     else { console.log('Данные успешно сохранены в файле ' + dataTime); }
+    // });
+
+    appendToJsonFile('./json/HH.json', all_data)
+    console.log(all_data)
+
+*/

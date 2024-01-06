@@ -3,9 +3,7 @@ const url_HH = [
     'ruby+or+Ruby+on+Rails',
     
     'Kotlin',
-    //'Android+developer',
     'Swift',
-    //'IOS+developer',
     'Dart',
 
     
@@ -30,6 +28,9 @@ const url_HH = [
     // 'node.js+and+go',
     // 'node.js+and+golang',
     // 'node.js+and+python',
+
+    //'Android+developer',
+    //'IOS+developer',
 
 ]
 
