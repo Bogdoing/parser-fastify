@@ -9,7 +9,7 @@ async function routes (fastify, options, done) {
         console.log('start Parsing')
         let result = await parser()
         console.log(result)
-        return { result }
+        return result
     })
     done();
 }

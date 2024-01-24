@@ -13,7 +13,7 @@ const getData = async() => {
             const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
             var linksLength =
                 dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent // console.log(Object.keys(dom.window.document.getElementsByClassName('bloko-header-section-3')[0])) // console.log(dom.window.document.getElementsByClassName('bloko-header-section-3')[0])
-            console.log(linksLength)
+            //console.log(linksLength)
 
         }
         for (let i = 0; i < url_arr.length; i++) {
@@ -22,7 +22,7 @@ const getData = async() => {
             const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
             var linksLength =
                 dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent
-            console.log(linksLength)
+            //console.log(linksLength)
         }
     }
     catch(e)
@@ -146,17 +146,17 @@ async function pars(region){
         //
         while (typeof job === 'undefined') {
             sleep(1000)
-            console.log(i)
+            //console.log(i)
             job = await getCountJob(url_hh[i], region)
         }    
         while (typeof jobReference === 'undefined') {
             sleep(1000)
-            console.log(i)
+            //console.log(i)
             jobReference = await getJobReference(url_hh[i], region)
         }  
         while (typeof resum === 'undefined') {
             sleep(1000)
-            console.log(i)
+            //console.log(i)
             job = await getCountResum(url_hh[i], region)
         }   
         if (job && job.count) {
@@ -178,16 +178,26 @@ async function pars(region){
             'region' : region,
             'data' : currData(),
         })
+        // let res = {
+        //     'lang': job.lang,
+        //     'vac': job.count,
+        //     'vacRef': jobReference.count,
+        //     'res': resum.resum,
+        //     'region' : region,
+        //     'data' : currData(),
+        // }
         
-        console.log({
-            'lang': job.lang,
-            'vac': job.count,
-            'vacRef': jobReference.count,
-            'res': resum.resum,
-            'region' : region,
-            'data' : currData(),
-        })
+        
+        // console.log({
+        //     'lang': job.lang,
+        //     'vac': job.count,
+        //     'vacRef': jobReference.count,
+        //     'res': resum.resum,
+        //     'region' : region,
+        //     'data' : currData(),
+        // })
     }
+
 
     console.log('-----------------------------------------')
     return result 
