@@ -1,0 +1,154 @@
+[
+  {
+    "lang": "1C",
+    "vac": "3887",
+    "vacRef": "37687",
+    "res": "1765244",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "ruby or Ruby on Rails",
+    "vac": "50",
+    "vacRef": "240",
+    "res": "4875",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Kotlin",
+    "vac": "111",
+    "vacRef": "864",
+    "res": "7376",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Swift",
+    "vac": "48",
+    "vacRef": "457",
+    "res": "20372",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Dart",
+    "vac": "6",
+    "vacRef": "58",
+    "res": "1587",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Flutter",
+    "vac": "63",
+    "vacRef": "128",
+    "res": "2583",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Rust",
+    "vac": "16",
+    "vacRef": "87",
+    "res": "1517",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "C",
+    "vac": "1054",
+    "vacRef": "16258",
+    "res": "699396",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "javascript or js",
+    "vac": "397",
+    "vacRef": "3533",
+    "res": "103399",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "TypeScript or ts",
+    "vac": "59",
+    "vacRef": "1436",
+    "res": "27881",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "php",
+    "vac": "624",
+    "vacRef": "1660",
+    "res": "84352",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "python",
+    "vac": "721",
+    "vacRef": "6895",
+    "res": "149304",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "golang or go developer",
+    "vac": "561",
+    "vacRef": "1729",
+    "res": "26707",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
+    "vac": "165",
+    "vacRef": "1360",
+    "res": "31906",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": ".net OR C#",
+    "vac": "630",
+    "vacRef": "2386",
+    "res": "143424",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "java",
+    "vac": "1252",
+    "vacRef": "3709",
+    "res": "70132",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Angular",
+    "vac": "127",
+    "vacRef": "561",
+    "res": "6440",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "React",
+    "vac": "282",
+    "vacRef": "1587",
+    "res": "29980",
+    "region": "1",
+    "data": "2024-1-31"
+  },
+  {
+    "lang": "Vue",
+    "vac": "182",
+    "vacRef": "851",
+    "res": "12626",
+    "region": "1",
+    "data": "2024-1-31"
+  }
+]

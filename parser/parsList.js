@@ -9,9 +9,9 @@ const url_HH = [
 
     
     'Rust',
-    'C++',
+    'C%2B%2B',
     
-    'javascript+or+js',
+    'javascript+or+js+or+frontend+or+Angular+or+React+or+Vue',
     'TypeScript+or+ts',
 
     'php',
@@ -24,14 +24,6 @@ const url_HH = [
     'Angular',
     'React',
     'Vue',
-
-    // 'node.js+and+php',
-    // 'node.js+and+go',
-    // 'node.js+and+golang',
-    // 'node.js+and+python',
-
-    //'Android+developer',
-    //'IOS+developer',
 
 ]
 

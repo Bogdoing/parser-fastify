@@ -9,7 +9,7 @@ const region_hh = dataPars.region_hh
 
 async function saveJSON(){
     console.time("Время выполнения");
-    //saveGIT()
+    saveGIT()
     saveHH()
     console.timeEnd("Время выполнения");
 }
@@ -120,15 +120,15 @@ function appendToJsonFile(filename, data) {
             });
 
             //
-            const filteredData = []; 
-            Object.values(data).forEach((entries) => { 
-                entries.forEach((entry) => { 
-                    if (entry.lang === "TypeScript or ts") { 
-                        filteredData.push(entry); 
-                    } 
-                }); 
-            });
-            console.log(filteredData);
+            // const filteredData = []; 
+            // Object.values(data).forEach((entries) => { 
+            //     entries.forEach((entry) => { 
+            //         if (entry.lang === "TypeScript or ts") { 
+            //             filteredData.push(entry); 
+            //         } 
+            //     }); 
+            // });
+            // console.log(filteredData);
             //
 
 
