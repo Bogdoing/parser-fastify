@@ -1,0 +1,154 @@
+[
+  {
+    "lang": "1C",
+    "vac": "12892",
+    "vacRef": "168638",
+    "res": "6487745",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "ruby or Ruby on Rails",
+    "vac": "71",
+    "vacRef": "420",
+    "res": "9952",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Kotlin",
+    "vac": "206",
+    "vacRef": "1654",
+    "res": "19517",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Swift",
+    "vac": "166",
+    "vacRef": "921",
+    "res": "35625",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Dart",
+    "vac": "14",
+    "vacRef": "142",
+    "res": "4377",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Flutter",
+    "vac": "115",
+    "vacRef": "280",
+    "res": "7007",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Rust",
+    "vac": "19",
+    "vacRef": "123",
+    "res": "3487",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "C++",
+    "vac": "1071",
+    "vacRef": "3880",
+    "res": "214457",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "javascript or js or frontend or Angular or React or Vue",
+    "vac": "2255",
+    "vacRef": "9737",
+    "res": "318667",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "TypeScript or ts",
+    "vac": "100",
+    "vacRef": "2795",
+    "res": "75214",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "php",
+    "vac": "1292",
+    "vacRef": "3756",
+    "res": "211606",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "python",
+    "vac": "1284",
+    "vacRef": "11783",
+    "res": "335117",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "golang or go developer",
+    "vac": "846",
+    "vacRef": "2752",
+    "res": "45674",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "node.js or Javascript backend or Javascript Fullstack or JS Fullstack or JS backend or TS backend",
+    "vac": "304",
+    "vacRef": "2756",
+    "res": "80074",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": ".net OR C#",
+    "vac": "1341",
+    "vacRef": "5152",
+    "res": "358124",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "java",
+    "vac": "2143",
+    "vacRef": "6542",
+    "res": "170368",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Angular",
+    "vac": "199",
+    "vacRef": "1126",
+    "res": "16129",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "React",
+    "vac": "498",
+    "vacRef": "2981",
+    "res": "75107",
+    "region": "113",
+    "data": "2024-2-22"
+  },
+  {
+    "lang": "Vue",
+    "vac": "312",
+    "vacRef": "1719",
+    "res": "33097",
+    "region": "113",
+    "data": "2024-2-22"
+  }
+]

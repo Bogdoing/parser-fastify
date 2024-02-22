@@ -9,7 +9,7 @@ const region_hh = dataPars.region_hh
 
 async function saveJSON(){
     console.time("Время выполнения");
-    saveGIT()
+    //saveGIT()
     saveHH()
     console.timeEnd("Время выполнения");
 }

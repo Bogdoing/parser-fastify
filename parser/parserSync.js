@@ -9,7 +9,7 @@ const getData = async() => {
     try{
         for (let i = 0; i < url_arr.length; i++) {
             const url = url_arr[i]
-            const response = await unirest.get(`https://hh.ru/search/vacancy?text=${url}&area=26`)
+            const response = await unirest.get(`https://hh.ru/search/vacancy?text=${url}&area=26`).headers({'Accept': 'text/html'})
             const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
             var linksLength =
                 dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent // console.log(Object.keys(dom.window.document.getElementsByClassName('bloko-header-section-3')[0])) // console.log(dom.window.document.getElementsByClassName('bloko-header-section-3')[0])
@@ -18,7 +18,7 @@ const getData = async() => {
         }
         for (let i = 0; i < url_arr.length; i++) {
             const url = url_arr[i]
-            const response = await unirest.get(`https://voronezh.hh.ru/search/resume?text=${url}&area=26&isDefaultArea=true&exp_period=all_time&logic=normal&pos=full_text&fromSearchLine=false`)
+            const response = await unirest.get(`https://voronezh.hh.ru/search/resume?text=${url}&area=26&isDefaultArea=true&exp_period=all_time&logic=normal&pos=full_text&fromSearchLine=false`).headers({'Accept': 'text/html'})
             const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
             var linksLength =
                 dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent
@@ -33,7 +33,7 @@ const getData = async() => {
 
 const getCountJob = async(url, region) => {
     try{
-        const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?ored_clusters=true&search_field=name&search_field=company_name&hhtmFrom=vacancy_search_list&area=${region}&text=${url}&enable_snippets=false&L_save_area=true`)
+        const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?ored_clusters=true&search_field=name&search_field=company_name&hhtmFrom=vacancy_search_list&area=${region}&text=${url}&enable_snippets=false&L_save_area=true`).headers({'Accept': 'text/html'})
                                         //  https://voronezh.hh.ru/search/vacancy?text=${url}&area=${region}&hhtmFrom=main&hhtmFromLabel=vacancy_search_line
         const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
         var linksLength = await
@@ -57,7 +57,7 @@ const getCountJob = async(url, region) => {
 
 const getJobReference = async(url, region) => {
     try{
-        const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?text=${url}&area=${region}&hhtmFrom=main&hhtmFromLabel=vacancy_search_line`)
+        const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?text=${url}&area=${region}&hhtmFrom=main&hhtmFromLabel=vacancy_search_line`).headers({'Accept': 'text/html'})
         const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
         var linksLength = await
             dom.window.document.getElementsByClassName('bloko-header-section-3')[0].textContent
@@ -80,7 +80,7 @@ const getJobReference = async(url, region) => {
 
 const getCountResum = async (url, region) => {
     try {
-        const response = await unirest.get(`https://voronezh.hh.ru/search/resume?text=${url}&area=${region}&isDefaultArea=true&exp_period=all_time&logic=normal&pos=full_text&fromSearchLine=false`)
+        const response = await unirest.get(`https://voronezh.hh.ru/search/resume?text=${url}&area=${region}&isDefaultArea=true&exp_period=all_time&logic=normal&pos=full_text&fromSearchLine=false`).headers({'Accept': 'text/html'})
         //const response = await unirest.get(`https://voronezh.hh.ru/search/vacancy?area=${region}&hhtmFrom=resume_list&search_field=name&search_field=company_name&search_field=description&enable_snippets=false&text=${url}`)
         const dom = new JSDOM(response.body); // Инициализация библиотеки jsdom для разбора полученных HTML-данных, как в браузере
         var linksLength = 

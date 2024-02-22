@@ -12,7 +12,7 @@
     "parsGit": "nodemon --inspect ./parser/parsGitHub.js",
     "json": "nodemon --inspect ./toJSON/writeJSON.js",
     "njson": "node ./toJSON/writeJSON.js",
-    "ntjson": "node toJSON/writeJSON.js"  
+    "ntjson": "node toJSON/writeJSON.js"
   },
   "dependencies": {
     "@fastify/cors": "^8.4.1",
@@ -21,6 +21,7 @@
     "fastify-cli": "^5.9.0",
     "fastify-plugin": "^4.5.1",
     "jsdom": "^22.1.0",
+    "pg": "^8.11.3",
     "unirest": "^0.6.0"
   },
   "devDependencies": {
